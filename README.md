@@ -157,7 +157,6 @@ public function getGateway(string $method)
         'CREDIT_CARD' => new CreditCardGateway(),
         'PAYPAL' => new PaypalGateway(),
         'STRIPE' => new StripeGateway(),
-        default => ['error' => 'Gateway not found']
     };
 }
 ```
